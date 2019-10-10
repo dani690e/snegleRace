@@ -66,7 +66,7 @@ function afstand() {
     document.getElementById(snegl2.id).style.left = snegl2.x + "px";
 
     // Spillet slutter når en eller begge snegle når i mål. Målet er angivet med variablen 'finishLine'
-    if (snegl1.x >= finishLine || snegl2 >= finishLine || snel3 >= finishLine) {
+    if (snegl1.x >= finishLine || snegl2 >= finishLine) {
         //Finder ud af hvem vinderen er, ved at sammenligne deres positioner.
         if (snegl1.x > snegl2.x) {
             setTimeout("winner('" + snegl1.navn + "');", 1000); // Vinderen er snegl1
